@@ -37,7 +37,7 @@ local footer = {
     },
 }
 
-local leader = ""
+local leader = "SPC"
 
 --- @param sc string
 --- @param txt string
@@ -75,11 +75,11 @@ end
 local buttons = {
     type = "group",
     val = {
-        button("e", "  New file", "<cmd>ene <CR>"),
-        button("f", "󰈞  Find file", "<cmd>Telescope find_files <CR>"),
-        button("u", "  Update Dependencies", "<cmd>AtmoVimUpdate<CR>"),
-        button("g", "󰈬  Find word", "<cmd>Telescope live_grep <CR>"),
-        button("q", "  Exit AtmoVim", "<cmd>:qa! <CR>"),
+        button("SPC e", "  New file", "<cmd>ene <CR>"),
+        button("SPC f", "󰈞  Find file", "<cmd>Telescope find_files <CR>"),
+        button("SPC u", "  Update Dependencies", "<cmd>AtmoVimUpdate<CR>"),
+        button("SPC g", "󰈬  Find word", "<cmd>Telescope live_grep <CR>"),
+        button("SPC q", "  Exit AtmoVim", "<cmd>:qa! <CR>"),
     },
     opts = {
         spacing = 1,
